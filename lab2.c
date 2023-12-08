@@ -29,7 +29,7 @@ if(*n<=0){
 	}
 *arr=(Products*)calloc(*n,sizeof(Products));
 for(int i=0;i<*n;i++){
-	if(fscanf(fp,"%s %d %d",(*arr)[i].name,(*arr)[i].price,(*arr)[i].term)!=3)
+	if(fscanf(fp,"%s %d %d",(*arr)[i].name,&(*arr)[i].price,&(*arr)[i].term)!=3)
 		break;
 	}
 fclose(fp);
