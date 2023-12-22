@@ -4,7 +4,6 @@
 #include "laba2.h"
 void search(Products*arr,int n){
 	FILE*fp=fopen("file.txt","r");
-	if(!fp) return;
 	int flt;
 	printf("1-name,2-price,3-term\n");
 	scanf("%d",&flt);
